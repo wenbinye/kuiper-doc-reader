@@ -10,9 +10,6 @@
             "email": "wenbinye@163.com"
         }
     ],
-    "support": {
-        "source" : "git@git.cuntutu.com:kuiper/doc-reader.git"
-    },
     "require": {
         "php": "^7.0",
         "kuiper/reflection": "^0.4"
@@ -26,5 +23,8 @@
         "psr-4": {
             "kuiper\\docReader\\": "tests/"
         }
+    },
+    "extra": {
+        "source" : "git@git.cuntutu.com:kuiper/doc-reader.git"
     }
 }
