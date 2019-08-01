@@ -114,6 +114,14 @@ class DocReaderTest extends TestCase
                 'annot' => DummyClass::class,
                 'bool' => 'bool',
             ]],
+            [
+                'typeMethod', [
+                'param1' => '?string',
+            ], ],
+            [
+                'typeMethodAnnotation', [
+                    'param1' => '?string',
+            ], ],
         ];
     }
 
@@ -132,6 +140,7 @@ class DocReaderTest extends TestCase
             ['arrayOfStrings', 'string[]'],
             ['arrayOfAnnotations', DummyClass::class.'[]'],
             ['multipleType', 'string|array'],
+            ['stringNullable', '?string'],
         ];
     }
 }

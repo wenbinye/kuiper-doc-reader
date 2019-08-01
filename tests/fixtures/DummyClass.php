@@ -2,10 +2,6 @@
 
 namespace kuiper\docReader\fixtures;
 
-use kuiper\docReader\fixtures\annotation\DummyAnnotation;
-use kuiper\docReader\fixtures\annotation\DummyJoinColumn;
-use kuiper\docReader\fixtures\annotation\DummyJoinTable;
-
 /**
  * A description of this class.
  *
@@ -15,7 +11,6 @@ use kuiper\docReader\fixtures\annotation\DummyJoinTable;
  * @author robo
  *
  * @since 2.0
- * @DummyAnnotation(dummyValue="hello")
  */
 class DummyClass
 {
@@ -23,26 +18,15 @@ class DummyClass
      * A nice property.
      *
      * @var mixed
-     * @DummyAnnotation(dummyValue="fieldHello")
      */
     private $field1;
 
-    /**
-     * @DummyJoinTable(
-     *    name="join_table",
-     *    joinColumns={@DummyJoinColumn(name="col1", referencedColumnName="col2")},
-     *    inverseJoinColumns={
-     *        @DummyJoinColumn(name="col3", referencedColumnName="col4")
-     *    }
-     * )
-     */
     private $field2;
 
     /**
      * Gets the value of field1.
      *
      * @return mixed
-     * @DummyAnnotation({1,2,"three"})
      */
     public function getField1()
     {

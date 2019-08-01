@@ -65,6 +65,11 @@ final class PhpDocVarType extends TestPhpDocReaderParent implements TestPhpDocRe
     public $multipleType;
 
     /**
+     * @var ?string
+     */
+    public $stringNullable;
+
+    /**
      * Gets the value of field1.
      *
      * @param int $integer
@@ -96,6 +101,17 @@ final class PhpDocVarType extends TestPhpDocReaderParent implements TestPhpDocRe
      * {@inheritdoc}
      */
     public function bar()
+    {
+    }
+
+    public function typeMethod(?string $param1)
+    {
+    }
+
+    /**
+     * @param ?string $param1
+     */
+    public function typeMethodAnnotation($param1)
     {
     }
 }
